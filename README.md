@@ -39,6 +39,8 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
   For full option documentation see:
   http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 ```
+If use Ensembl VEP, please cite:
+McLaren, William, Laurent Gil, Sarah E. Hunt, Harpreet Singh Riat, Graham RS Ritchie, Anja Thormann, Paul Flicek, and Fiona Cunningham. "The ensembl variant effect predictor." Genome biology 17, no. 1 (2016): 1-14.
 
 ## 1.3 Download and convert vep_104_GRCh37
 > vep_install -a cf -s homo_sapiens -y GRCh37 -c /data1/gfang/data/vep –CONVERT
@@ -87,6 +89,9 @@ For release 4.1a with GRCh37/hg19 data:
 > zgrep -h -v ^#chr dbNSFP4.1a_variant.chr* | awk '$8 != "." ' | sort -T /home/gefang1/data/vep/dbNSFP/temp/ -k8,8 -k9,9n - | cat h - | bgzip -c > dbNSFP4.1a_grch37.gz
 
 > tabix -s 8 -b 9 -e 9 dbNSFP4.1a_grch37.gz
+
+If use dbNSFP4.1, please cite:
+Liu, Xiaoming, Chang Li, Chengcheng Mou, Yibo Dong, and Yicheng Tu. "dbNSFP v4: a comprehensive database of transcript-specific functional predictions and annotations for human nonsynonymous and splice-site SNVs." Genome medicine 12, no. 1 (2020): 1-8.
 
 # 3. Example of Ensembl VEP usage
 >vep -i example.vcf --fork 4 -o homo_sapiens_GRCh37.out.vcf --assembly GRCh37 --cache --cache_version 104 --dir /plugins_path/vep --offline --fasta /file_path/vep/homo_sapiens/104_GRCh37/Homo_sapiens.GRCh37.75.dna.primary_assembly.fa.gz  --force_overwrite
@@ -198,6 +203,10 @@ else:
 ```
 >python iupred2a.py -a P53_HUMAN.seq long
 
+If use IUPred2A, please cite:
+Bálint Mészáros, Gábor Erdős, Zsuzsanna Dosztányi
+IUPred2A: context-dependent prediction of protein disorder as a function of redox state and protein binding
+Nucleic Acids Research 2018;46(W1):W329-W337.
 
 # 6. Position Specific Score Matrix (PSSM)
 We adopted the PSI-BLAST (Position-Specific Iterated Basic Local Alignment Search Tool) to generate PSSM information. For more detail information, please refer to: 
