@@ -42,6 +42,7 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 
 ## 1.3 Install vep_104_GRCh37
 > vep_install -a cf -s homo_sapiens -y GRCh37 -c /data1/gfang/data/vep –CONVERT
+```
 - getting list of available cache files
 - downloading ftp://ftp.ensembl.org/pub/release-104/variation/indexed_vep_cache/homo_sapiens_vep_104_GRCh37.tar.gz
 - unpacking homo_sapiens_vep_104_GRCh37.tar.gz
@@ -51,6 +52,7 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 - Processing version 104_GRCh37
 - No unprocessed types remaining, skipping
 - All done!
+```
 
 ## 1.4 Install plugins
 User can install the required some plugins at the same time
