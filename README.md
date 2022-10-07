@@ -200,6 +200,8 @@ else:
 
 
 # 6. Position Specific Score Matrix (PSSM)
-You could use PSI-BLAST software searing swiss-port database. Software address :https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
+We adopted the PSI-BLAST (Position-Specific Iterated Basic Local Alignment Search Tool) to generate PSSM information. For more detail information, please refer to: 
+Schaffer A A, Aravind L, Madden T L, et al. Improving the accuracy of PSI-BLAST protein database searches with composition-based statistics and other refinements [J]. Nucleic Acids Research, 2001, 29(14): 2994-3005.  
+Software website: https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
 
 
