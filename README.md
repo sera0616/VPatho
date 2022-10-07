@@ -67,7 +67,6 @@ OR User can install the required plugin one by one
 >vep_install -a p --PLUGINS GO
 etc
 
-
 # 2. dbNSF v4.1a installation
 For detailed information, please refer to:https://sites.google.com/site/jpopgen/dbNSFP
 (Note: unzip “dbNSF v4.1a” database need about 28.42GB disk space)
@@ -164,7 +163,6 @@ decoded = r.json()
 print('--repr(decoded)--',repr(decoded)) #type(repr(decoded)): str
 print('--decoded.sequence--',decoded['seq']) #type(decoded):dict
 ```
-
 ### Example-2:
 ```
 import requests, sys
@@ -197,8 +195,9 @@ if '-a' in sys.argv:
     print("# POS\tRES\tIUPRED2\tANCHOR2")
 else:
     print("# POS\tRES\tIUPRED2")
->python iupred2a.py -a P53_HUMAN.seq long
 ```
+>python iupred2a.py -a P53_HUMAN.seq long
+
 
 # 6. Position Specific Score Matrix (PSSM)
 You could use PSI-BLAST software searing swiss-port database. Software address :https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
