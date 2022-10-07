@@ -59,38 +59,58 @@ User can install the required some plugins at the same time
 >vep_install -a p --PLUGINS AncestralAllele, Blosum62, CADD, CSN, Carol, Condel, Conservation, DisGeNET, Downstream, Draw, ExAC, ExACpLI, FATHMM, FATHMM_MKL, FlagLRG, FunMotifs, G2P, GO, GeneSplicer, Gwava, HGVSIntronOffset, LD, LOVD, LoF, LoFtool, LocalID, MPC, MTR, Mastermind, MaxEntScan, NearestExonJB, NearestGene, PON_P2, Phenotypes, PostGAP, ProteinSeqs, REVEL, ReferenceQuality, SameCodon, SingleLetterAA, SpliceAI, SpliceRegion, StructuralVariantOverlap, SubsetVCF, TSSDistance, dbNSFP, dbscSNV, gnomADc, miRNA, neXtProt, satMutMPRA
 
 OR User can install the required plugin one by one
+
 >vep_install -a p --PLUGINS ExAC
+
 >vep_install -a p --PLUGINS Blosum62
+
 >vep_install -a p --PLUGINS GO
 etc
 
 
 # 2. dbNSF v4.1a installation
 For detailed information, please refer to:https://sites.google.com/site/jpopgen/dbNSFP
-(Note: unzip “dbNSF v4.1a” database need about 28.42GB)
+(Note: unzip “dbNSF v4.1a” database need about 28.42GB disk space)
+
 >source activate vep
+
 >mkdir /filepath/dbNSFP4.1/
+
 >cd /filepath/dbNSFP4.1/
+
 For release 4.1a with GRCh37/hg19 data:
 > wget ftp://dbnsfp:dbnsfp@dbnsfp.softgenetics.com/dbNSFP4.1a.zip
+
 > unzip dbNSFP4.1a.zip
+
 > zcat dbNSFP4.1a_variant.chr1.gz | head -n1 > h
+
 > zgrep -h -v ^#chr dbNSFP4.1a_variant.chr* | awk '$8 != "." ' | sort -T /home/gefang1/data/vep/dbNSFP/temp/ -k8,8 -k9,9n - | cat h - | bgzip -c > dbNSFP4.1a_grch37.gz
+
 > tabix -s 8 -b 9 -e 9 dbNSFP4.1a_grch37.gz
 
 # 3. Example of Ensembl VEP usage
-vep -i example.vcf --fork 4 -o homo_sapiens_GRCh37.out.vcf --assembly GRCh37 --cache --cache_version 104 --dir /plugins_path/vep --offline --fasta /file_path/vep/homo_sapiens/104_GRCh37/Homo_sapiens.GRCh37.75.dna.primary_assembly.fa.gz  --force_overwrite
+>vep -i example.vcf --fork 4 -o homo_sapiens_GRCh37.out.vcf --assembly GRCh37 --cache --cache_version 104 --dir /plugins_path/vep --offline --fasta /file_path/vep/homo_sapiens/104_GRCh37/Homo_sapiens.GRCh37.75.dna.primary_assembly.fa.gz  --force_overwrite
 
 # 4. Ensembl API installation
+
 ## 4.1 install bioperl-1.2.3
 >source activate vep
+
 >perl –v
+
 >cd ~
+
 >mkdir src
+
 >cd src
+
 >wget https://github.com/bioperl/bioperl-live/archive/bioperl-release-1-2-3.zip
+
 >unzip bioperl-release-1-2-3.zip
+
 >mv bioperl-live-bioperl-release-1-2-3/  bioperl-1.2.3
+
 >ls
 
 ## 4.2 Install ensembl API
