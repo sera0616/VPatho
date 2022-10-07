@@ -6,8 +6,11 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 
 ## 1.1  Create a new virtual environment and conda install：
 >conda  create –n vep
+
 >source activate vep
+
 >conda install -c bioconda ensembl-vep
+
 
 ## 1.2 Check detailed command information
 > vep –help
