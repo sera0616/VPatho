@@ -114,27 +114,45 @@ For release 4.1a with GRCh37/hg19 data:
 >ls
 
 ## 4.2 Install ensembl API
+
 >git –version
+
 >git clone https://github.com/Ensembl/ensembl.git
+
 >git clone https://github.com/Ensembl/ensembl-variation.git
+
 >git clone https://github.com/Ensembl/ensembl-compara.git
+
 >git clone https://github.com/Ensembl/ensembl-funcgen.git
+
 >git clone https://github.com/Ensembl/ensembl-tools.git
+
 >echo $SHELL
+
 >PERL5LIB=${PERL5LIB}:${HOME}/src/bioperl-1.2.3
+
 >PERL5LIB=${PERL5LIB}:${HOME}/src/ensembl/modules
+
 >PERL5LIB=${PERL5LIB}:${HOME}/src/ensembl-compara/modules
+
 >PERL5LIB=${PERL5LIB}:${HOME}/src/ensembl-variation/modules
+
 >PERL5LIB=${PERL5LIB}:${HOME}/src/ensembl-funcgen/modules
+
 >PERL5LIB=${PERL5LIB}:${HOME}/src/ensembl-tools/modules
+
 >echo $PERL5LIB
+
 >cd ensembl
+
 >cd misc-scripts/
+
 >./ping_ensembl.pl
 
 ## 4.3 Usage of Ensembl API
 User could find some examples at https://rest.ensembl.org/documentation/info/sequence_id and make some changes for their own ENSP*. Herein, we list two typical examples as below:
-Example-1:
+### Example-1:
+```
 import requests, sys
 server = "https://rest.ensembl.org"
 ext = "/sequence/id/ENSP00000368496?"
@@ -145,8 +163,10 @@ if not r.ok:
 decoded = r.json()
 print('--repr(decoded)--',repr(decoded)) #type(repr(decoded)): str
 print('--decoded.sequence--',decoded['seq']) #type(decoded):dict
+```
 
-Example-2:
+### Example-2:
+```
 import requests, sys
 server = "https://rest.ensembl.org"
 mylist=['ENSP00000368496','ENSP00000263741','ENSP00000327214','ENSG00000176022','ENSG00000162551']
@@ -161,7 +181,7 @@ for i in range(len(mylist)):
   print('-------'+mylist[i]+'---------')
   print('--repr(decoded)--',repr(decoded)) #type(repr(decoded)): str
   print('--decoded.sequence--',decoded['seq']) #type(decoded):dict
-
+```
 
 # 5. IUPred2A
 
@@ -170,12 +190,15 @@ User must fill the form (https://iupred2a.hu/download_new). Then, the program pa
 
 ## 5.2 Usage
 >cd /file_path/iupred2a/
+
+```
 Uncomment the following codes:
 if '-a' in sys.argv:
     print("# POS\tRES\tIUPRED2\tANCHOR2")
 else:
     print("# POS\tRES\tIUPRED2")
 >python iupred2a.py -a P53_HUMAN.seq long
+```
 
 # 6. Position Specific Score Matrix (PSSM)
 You could use PSI-BLAST software searing swiss-port database. Software address :https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
