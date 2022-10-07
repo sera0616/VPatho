@@ -214,7 +214,6 @@ Schaffer A A, Aravind L, Madden T L, et al. Improving the accuracy of PSI-BLAST 
 Software website: https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
 
 ### Multiple sequence alignment database:
-'''
 Swiss-port protein sequence database. For detailed information, please refer to: Bairoch, Amos, and Rolf Apweiler. "The SWISS-PROT protein sequence database and its supplement TrEMBL in 2000." Nucleic acids research 28, no. 1 (2000): 45-48.
 
 
