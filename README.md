@@ -40,7 +40,7 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
   http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 ```
 
-## 1.3 Install vep_104_GRCh37
+## 1.3 Download and convert vep_104_GRCh37
 > vep_install -a cf -s homo_sapiens -y GRCh37 -c /data1/gfang/data/vep –CONVERT
 ```
 - getting list of available cache files
