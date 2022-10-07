@@ -14,6 +14,7 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 
 ## 1.2 Check detailed command information
 > vep –help
+```
  Versions:
     ensembl              : 104.1af1dce
     ensembl-funcgen      : 104.59ae779
@@ -37,6 +38,7 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
   --fork [num_forks]     Use forking to improve script runtime
   For full option documentation see:
   http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
+```
 
 ## 1.3 Install vep_104_GRCh37
 > vep_install -a cf -s homo_sapiens -y GRCh37 -c /data1/gfang/data/vep –CONVERT
