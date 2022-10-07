@@ -1,4 +1,4 @@
-# Software, tool, database for VPatho
+# Software, tool, and database for VPatho
 ---------------------------------------------------------------------------------
 # 1. Ensembl VEP v104 installation
 
