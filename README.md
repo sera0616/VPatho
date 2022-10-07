@@ -214,3 +214,6 @@ Schaffer A A, Aravind L, Madden T L, et al. Improving the accuracy of PSI-BLAST 
 Software website: https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
 
 
+## Contact 
+If you are interested in our work, OR, if you have any suggestions/questions about our work, PLEASE contact with us. 
+E-mail: gfang0616@njust.edu.cn
