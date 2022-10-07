@@ -14,29 +14,29 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 
 ## 1.2 Check detailed command information
 > vep –help
-Versions:
-  ensembl              : 104.1af1dce
-  ensembl-funcgen      : 104.59ae779
-  ensembl-io           : 104.1d3bb6e
-  ensembl-variation    : 104.6154f8b
-  ensembl-vep          : 104.3
-Help: dev@ensembl.org , helpdesk@ensembl.org
-Twitter: @ensembl
-http://www.ensembl.org/info/docs/tools/vep/script/index.html
-Usage:
-./vep [--cache|--offline|--database] [arguments]
-Basic options
-=============
---help                 Display this message and quit
--i | --input_file      Input file
--o | --output_file     Output file
---force_overwrite      Force overwriting of output file
---species [species]    Species to use [default: "human"]                       
---everything           Shortcut switch to turn on commonly used options. See web
-                       documentation for details [default: off]                       
---fork [num_forks]     Use forking to improve script runtime
-For full option documentation see:
-http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
+  Versions:
+    ensembl              : 104.1af1dce
+    ensembl-funcgen      : 104.59ae779
+    ensembl-io           : 104.1d3bb6e
+    ensembl-variation    : 104.6154f8b
+    ensembl-vep          : 104.3
+  Help: dev@ensembl.org , helpdesk@ensembl.org
+  Twitter: @ensembl
+  http://www.ensembl.org/info/docs/tools/vep/script/index.html
+  Usage:
+  ./vep [--cache|--offline|--database] [arguments]
+  Basic options
+  =============
+  --help                 Display this message and quit
+  -i | --input_file      Input file
+  -o | --output_file     Output file
+  --force_overwrite      Force overwriting of output file
+  --species [species]    Species to use [default: "human"]                       
+  --everything           Shortcut switch to turn on commonly used options. See web
+                         documentation for details [default: off]                       
+  --fork [num_forks]     Use forking to improve script runtime
+  For full option documentation see:
+  http://www.ensembl.org/info/docs/tools/vep/script/vep_options.html
 
 ## 1.3 Install vep_104_GRCh37
 > vep_install -a cf -s homo_sapiens -y GRCh37 -c /data1/gfang/data/vep –CONVERT
