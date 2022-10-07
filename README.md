@@ -42,7 +42,7 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 If use Ensembl VEP, please cite:
 McLaren, William, Laurent Gil, Sarah E. Hunt, Harpreet Singh Riat, Graham RS Ritchie, Anja Thormann, Paul Flicek, and Fiona Cunningham. "The ensembl variant effect predictor." Genome biology 17, no. 1 (2016): 1-14.
 
-## 1.3 Download and convert vep_104_GRCh37
+## 1.3 Download and convert genome-build vep_104_GRCh37
 > vep_install -a cf -s homo_sapiens -y GRCh37 -c /data1/gfang/data/vep –CONVERT
 ```
 - getting list of available cache files
