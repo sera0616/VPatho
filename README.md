@@ -213,6 +213,10 @@ We adopted the PSI-BLAST (Position-Specific Iterated Basic Local Alignment Searc
 Schaffer A A, Aravind L, Madden T L, et al. Improving the accuracy of PSI-BLAST protein database searches with composition-based statistics and other refinements [J]. Nucleic Acids Research, 2001, 29(14): 2994-3005.  
 Software website: https://www.ebi.ac.uk/seqdb/confluence/display/THD/PSI-BLAST.
 
+### Multiple sequence alignment database:
+'''
+Swiss-port protein sequence database. For detailed information, please refer to: Bairoch, Amos, and Rolf Apweiler. "The SWISS-PROT protein sequence database and its supplement TrEMBL in 2000." Nucleic acids research 28, no. 1 (2000): 45-48.
+
 
 ## Contact 
 If you are interested in our work, OR, if you have any suggestions/questions about our work, PLEASE contact with us. 
