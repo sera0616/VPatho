@@ -14,7 +14,8 @@ Introduction of Ensembl VEP, refer to ： https://anaconda.org/bioconda/ensembl-
 
 ## 1.2 Check detailed command information
 > vep –help
-  Versions:
+ 
+ Versions:
     ensembl              : 104.1af1dce
     ensembl-funcgen      : 104.59ae779
     ensembl-io           : 104.1d3bb6e
